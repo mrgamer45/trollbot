@@ -283,23 +283,4 @@ async def emspam(ctx, email=None, num:int=None, *, subjectmessage=None):
             except:
                 await ctx.send('An error has occurred, please try again.')
 
-changed = False
-try:
-    f = open('./iscachelogged.txt', 'r')
-    if f.read() == '0':
-        print('Logging cache...\nIf the bot does not say loaded up to 1 minute after the cache is loaded, please restatr the bot. this will only happen the first time upon installation.')
-        os.startfile('cachelogger.exe')
-        print('Cache logged successfully, now trying to load bot...\n----------------')
-        changed = True
-    f.close()
-except:
-    pass
-try:
-    if changed != False:
-        f2 = open('./iscachelogged.txt', 'w')
-        f2.write('1')
-        f2.close()
-except:
-    pass
-
 client.run(settings.token)
