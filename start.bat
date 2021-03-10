@@ -1,0 +1,2 @@
+python trollbot.py
+pause
