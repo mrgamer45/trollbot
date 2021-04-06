@@ -64,16 +64,22 @@ async def dm(ctx, user:discord.User=None, *, message=None):
             elif message == None:
                 await ctx.send('Please provide a message!')
             else:
-                await user.send(message)
-                await ctx.send(f'Successfully dmed {user}')
+                try:
+                    await user.send(message)
+                    await ctx.send(f'Successfully dmed `{user}`')
+                except:
+                    await ctx.send(f'Failed to dm `{user}`')
     else:
         if user == None:
             await ctx.send('Please provide a user!')
         elif message == None:
             await ctx.send('Please provide a message!')
         else:
-            await user.send(message)
-            await ctx.send(f'Successfully dmed {user}')
+            try:
+                await user.send(message)
+                await ctx.send(f'Successfully dmed `{user}`')
+            except:
+                await ctx.send(f'Failed to dm `{user}`')
 @client.command(help='Pings the channel without leaving a message')
 async def ghostping(ctx):
     if settings.locked == True:
