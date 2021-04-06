@@ -20,4 +20,4 @@ Do help (command) to see more info on commands
 - emspam - Same as email, but spams emails to the poor recipient
 
 ## Disclaimer
-I am not responsible for anything that happens to your account while using this software. Please note that most of this stuff is against discord's tos and can get punished.
+I am not responsible for anything that happens while using this software. Please note that most of this stuff is against discord's tos and can get punished.
