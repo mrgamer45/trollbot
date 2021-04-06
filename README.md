@@ -2,7 +2,7 @@
 This is the best bot for trolling server owners and stuff
 
 ## Setup
-First, install python [here](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7). Once it has finished installing, go to command prompt and run `python3.9 -m pip install -U discord.py asyncio`. Then, follow [this](https://discordpy.readthedocs.io/en/latest/discord.html) tutorial on how to make a bot and put the token in the neatly organized `settings.py` file. Once you have done all of this and set up `settings.py` following the instructions in there, you can start the file in `start.bat`. Currently, I do not know how to make a start file that can work on different platforms, so if you are on a different os than Windows, you may have to run it using an external software, ide, etc.
+First, install python [here](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7). Once it has finished installing, go to command prompt and run `python3.9 -m pip install -U discord.py asyncio`. Then, follow [this](https://discordpy.readthedocs.io/en/latest/discord.html) tutorial on how to make a bot and put the token in the neatly organized `settings.py` file. Once you have done all of this and set up `settings.py` by following the instructions in there, you can start the file in `start.bat`. Currently, I do not have start file that can work on different platforms, so if you are on a different os than Windows, you may have to run it using an external software, ide, etc.
 
 ## Commands
 Do help (command) to see more info on commands
