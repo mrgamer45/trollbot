@@ -309,11 +309,13 @@ async def dmspam(ctx, user:discord.User=None, num:int=None, *, message=None):
             await ctx.send('Please provide a user!')
         elif message == None:
             await ctx.send('Please provide a message!')
+        elif num == None:
+            await ctx.send('Missing Required Variable `Number`!')
         else:
-            try:
-                await user.send(message)
-                await ctx.send(f'Successfully dmed `{user}`')
-            except:
-                await ctx.send(f'Failed to dm `{user}`')
+            for e in range(0,num):
+                try:
+                    await user.send(message)
+                except:
+            await ctx.send(f"Sent/tried to send `{num}` messages with the content `{message}`!")
 
 client.run(settings.token)
