@@ -294,10 +294,10 @@ async def dmspam(ctx, user:discord.User=None, num:int=None, *, message=None):
         if ctx.author.id == settings.owner_id:
             if user == None:
                 await ctx.send('Please provide a user!')
-            elif message == None:
-                await ctx.send('Please provide a message!')
             elif num == None:
                 await ctx.send('Missing Required Variable `Number`!')
+            elif message == None:
+                await ctx.send('Please provide a message!')
             else:
                 for e in range(0,num):
                     try:
@@ -307,10 +307,10 @@ async def dmspam(ctx, user:discord.User=None, num:int=None, *, message=None):
     else:
         if user == None:
             await ctx.send('Please provide a user!')
-        elif message == None:
-            await ctx.send('Please provide a message!')
         elif num == None:
             await ctx.send('Missing Required Variable `Number`!')
+        elif message == None:
+            await ctx.send('Please provide a message!')
         else:
             for e in range(0,num):
                 try:
