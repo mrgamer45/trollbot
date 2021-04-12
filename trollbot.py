@@ -303,7 +303,7 @@ async def dmspam(ctx, user:discord.User=None, num:int=None, *, message=None):
                     try:
                         await user.send(message)
                     except:
-                await ctx.send(f"Sent/tried to send `{num}` messages with the content `{message}`!")
+                        await ctx.send(f"Sent/tried to send `{num}` messages with the content `{message}`!")
     else:
         if user == None:
             await ctx.send('Please provide a user!')
@@ -316,6 +316,6 @@ async def dmspam(ctx, user:discord.User=None, num:int=None, *, message=None):
                 try:
                     await user.send(message)
                 except:
-            await ctx.send(f"Sent/tried to send `{num}` messages with the content `{message}`!")
+                    await ctx.send(f"Sent/tried to send `{num}` messages with the content `{message}`!")
 
 client.run(settings.token)
