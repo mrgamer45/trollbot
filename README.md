@@ -10,6 +10,7 @@ Do help (command) to see more info on commands
 - spamchannel - This command spams channels in the server
 - replacechannels - This basically deletes all of the channels in the server, then spams channels
 - dm - This can be used to simply dm people you choose
+- dmspam - This is basically dm, but it spams however many times you choose
 - ghostping - This makes the bot ping and then delete the message instantly, giving people a ping without a message, sometimes being very glitchy if they check it on mobile devices
 - massghostping - This just ghostpings in every single channel of the server, wrecking people with pings. If this command is spammed, it can lead to being detected by ratelimit, so be careful on how much you use it
 - massdm - Sends a message to everyone in the server that it can

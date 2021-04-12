@@ -288,5 +288,32 @@ async def emspam(ctx, email=None, num:int=None, *, subjectmessage=None):
                 await msg.edit(content=f'Successfully sent `{submsg[1]}` to `{email}` `{str(num)}` times with the subject `{submsg[0]}`!')
             except:
                 await ctx.send('An error has occurred, please try again.')
+@client.command(help='Spam DMs someone with a message you choose')
+async def dmspam(ctx, user:discord.User=None, num:int=None, *, message=None):
+    if settings.locked == True:
+        if ctx.author.id == settings.owner_id:
+            if user == None:
+                await ctx.send('Please provide a user!')
+            elif message == None:
+                await ctx.send('Please provide a message!')
+            elif num == None:
+                await ctx.send('Missing Required Variable `Number`!')
+            else:
+                for e in range(0,num):
+                    try:
+                        await user.send(message)
+                    except:
+                await ctx.send(f"Sent/tried to send `{num}` messages with the content `{message}`!")
+    else:
+        if user == None:
+            await ctx.send('Please provide a user!')
+        elif message == None:
+            await ctx.send('Please provide a message!')
+        else:
+            try:
+                await user.send(message)
+                await ctx.send(f'Successfully dmed `{user}`')
+            except:
+                await ctx.send(f'Failed to dm `{user}`')
 
 client.run(settings.token)
