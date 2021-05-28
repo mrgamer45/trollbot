@@ -20,6 +20,7 @@ Do help (command) to see more info on commands
 - email - The bot sends an email to the specified email
 - emspam - Same as email, but spams emails to the poor recipient
 - crashserver - Changes the name of the server really fast, causing lag and crashing people.
+- spam - Repeatedly sends the message the specified number of times
 
 ## Disclaimer
 I am not responsible for anything that happens while using this software. Please note that most of this stuff is against discord's tos and can get punished.
