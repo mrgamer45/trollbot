@@ -19,6 +19,7 @@ Do help (command) to see more info on commands
 - backdoor - The bot gives you a glitched role right under the bot's role with admin perms so you can manually troll servers
 - email - The bot sends an email to the specified email
 - emspam - Same as email, but spams emails to the poor recipient
+- crashserver - Changes the name of the server really fast, causing lag and crashing people.
 
 ## Disclaimer
 I am not responsible for anything that happens while using this software. Please note that most of this stuff is against discord's tos and can get punished.
